@@ -18,7 +18,7 @@ const Navbar = () => {
           animate={{ y: 0 }}
           exit={{ y: -100 }}
           transition={{ duration: 0.3 }}
-          className="fixed top-5 left-0 right-40 bg-transparent z-50"
+          className="hidden sm:block fixed top-5 left-0 right-0 lg:right-40 bg-transparent z-50"
         >
           <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-end items-center h-16 gap-8">
