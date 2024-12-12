@@ -30,7 +30,7 @@ const Hero = () => {
       >
         <div
           className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/95 to-transparent opacity-90 z-10 
-          [background-image:linear-gradient(to_right,rgb(2,6,23),rgba(2,6,23,0.8),transparent),url('/noise.png')]"
+          [background-image:linear-gradient(to_right,rgb(2,6,23)_0%,rgba(2,6,23,0.95)_25%,rgba(2,6,23,0.8)_50%,rgba(2,6,23,0.4)_75%,transparent_100%),url('/noise.png')]"
         />
 
         <motion.p
