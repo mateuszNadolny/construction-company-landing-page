@@ -38,25 +38,25 @@ const Navbar = () => {
                 Our mission
               </button>
               <button
-                onClick={() => handleNavClick("testimonials")}
+                onClick={() => handleNavClick("our-work")}
                 className="text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none"
                 aria-label="Navigate to Our Work section"
+                tabIndex={0}
+              >
+                Our houses
+              </button>
+
+              <button
+                onClick={() => handleNavClick("testimonials")}
+                className="text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none"
+                aria-label="Navigate to Our Clients section"
                 tabIndex={0}
               >
                 Reviews
               </button>
 
               <button
-                onClick={() => handleNavClick("our-clients")}
-                className="text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none"
-                aria-label="Navigate to Our Clients section"
-                tabIndex={0}
-              >
-                Our Houses
-              </button>
-
-              <button
-                onClick={() => handleNavClick("market")}
+                onClick={() => handleNavClick("contact")}
                 className="text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none"
                 aria-label="Navigate to Market section"
                 tabIndex={0}

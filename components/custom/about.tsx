@@ -56,7 +56,7 @@ const About = () => {
     <section
       id="about"
       ref={ref}
-      className="relative flex flex-col flex-1 min-h-screen items-center justify-center  bg-gradient-to-b from-yellow-50/30 via-slate-50/20 to-white/90 backdrop-blur-[2px] overflow-hidden"
+      className="relative flex flex-col flex-1 min-h-screen items-center justify-center py-20 lg:py-0 bg-gradient-to-b from-yellow-50/30 via-slate-50/20 to-white/90 backdrop-blur-[2px] overflow-hidden"
     >
       <div className="absolute inset-0 lg:hidden">
         <Image
@@ -125,7 +125,7 @@ const About = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="space-y-2 p-4 rounded-lg transition-colors duration-300"
+                className="space-y-2 lg:p-4 rounded-lg transition-colors duration-300 mb-2 lg:mb-0"
               >
                 <h3 className="font-bold flex items-center gap-2">
                   <motion.div
