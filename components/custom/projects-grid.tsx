@@ -16,7 +16,7 @@ const ProjectsGrid = () => {
       className="z-20 w-[90%] lg:w-[70%]"
     >
       <motion.h2 className="text-slate-950 text-transparent text-3xl font-bold tracking-tighter sm:text-4xl bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text  px-4 mb-2">
-        Explore our work
+        Explore our recent work
       </motion.h2>
       <motion.h3 className="text-muted-foreground text-sm md:text-lg mb-8 px-4 flex items-start md:items-center gap-2">
         <Flower className="w-6 h-6 text-yellow-400" />
