@@ -1,6 +1,7 @@
 "use client";
 import TestimonialsGrid from "@/components/custom/testimonials-grid";
 import { motion } from "framer-motion";
+
 const Testimonials = () => {
   return (
     <div
@@ -13,7 +14,7 @@ const Testimonials = () => {
         animate={{ opacity: 1, y: 0 }}
         className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-slate-950 bg-yellow-400/90 px-6 py-3 rounded-xl mb-4 shadow-xl z-20"
       >
-        Testimonials
+        Not convinced?
       </motion.h2>
       <motion.h3
         initial={{ opacity: 0 }}
@@ -21,7 +22,7 @@ const Testimonials = () => {
         transition={{ delay: 0.2 }}
         className="text-xl sm:text-xl md:text-4xl font-medium text-slate-600 mb-4 z-20"
       >
-        What Our Clients Say
+        Check out what our clients say about us
       </motion.h3>
       <TestimonialsGrid />
     </div>

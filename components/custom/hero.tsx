@@ -22,7 +22,6 @@ const Hero = () => {
         bg-cover 
         bg-center 
         bg-no-repeat
-        bg-fixed
         flex flex-col justify-center 
         px-4 sm:px-8 md:px-16 lg:px-32 xl:px-40
         relative
