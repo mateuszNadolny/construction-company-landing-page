@@ -53,7 +53,9 @@ const Hero = () => {
         >
           Elevated <br className="hidden sm:block" /> Modern{" "}
           <br className="hidden sm:block" />
-          <span className="text-yellow-400">Living</span>
+          <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-transparent bg-clip-text">
+            Living
+          </span>
         </motion.h1>
 
         <motion.p
@@ -79,7 +81,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
             <Button
               variant="default"
-              className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-slate-900 
+              className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 to-yellow-500 hover:bg-yellow-500 text-slate-900 
                 font-semibold px-4 sm:px-6 py-5 sm:py-6 text-sm sm:text-base
                 transition-all duration-100 hover:scale-95"
             >

@@ -1,10 +1,11 @@
 "use client";
 
-import { ChevronsUp, Flower, HousePlus, ShieldCheck } from "lucide-react";
+import { useRef } from "react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { ChevronsUp, Flower, HousePlus, ShieldCheck } from "lucide-react";
 
 const About = () => {
   const ref = useRef(null);
@@ -159,6 +160,15 @@ const About = () => {
                 </p>
               </motion.div>
             ))}
+
+            <Button
+              variant="default"
+              className="w-auto md:w-[200px] bg-gradient-to-r from-yellow-400 to-yellow-500 hover:bg-yellow-500 text-slate-900 
+                font-semibold p-6 text-sm sm:text-base
+                transition-all duration-100 hover:scale-95"
+            >
+              Get Started Now
+            </Button>
           </motion.div>
         </motion.div>
       </motion.div>
