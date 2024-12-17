@@ -1,10 +1,10 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import useMouseActivity from "@/hooks/useMouseActivity";
+import useScrollVisibility from "@/hooks/useScrollVisibility";
 import { Bolt } from "lucide-react";
 
 const Navbar = () => {
-  const isVisible = useMouseActivity();
+  const isVisible = useScrollVisibility();
 
   const handleNavClick = (sectionId: string) => {
     const element = document.getElementById(sectionId);

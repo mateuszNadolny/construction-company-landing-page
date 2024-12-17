@@ -15,7 +15,7 @@ const useMouseActivity = () => {
       // Set a new timeout to hide the navbar after 3 seconds
       timeoutId = setTimeout(() => {
         setIsVisible(false);
-      }, 3000);
+      }, 1000);
     };
 
     // Add mouse move listener
@@ -24,7 +24,7 @@ const useMouseActivity = () => {
     // Initial timeout
     timeoutId = setTimeout(() => {
       setIsVisible(false);
-    }, 3000);
+    }, 1000);
 
     // Cleanup
     return () => {

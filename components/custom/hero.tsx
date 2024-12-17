@@ -13,6 +13,7 @@ const Hero = () => {
       className="relative flex flex-1 w-full h-screen min-h-screen items-center justify-center"
       role="banner"
       aria-label="Hero section"
+      id="hero"
     >
       <div
         className="
