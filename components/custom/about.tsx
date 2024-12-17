@@ -84,11 +84,18 @@ const About = () => {
           className="relative group hidden lg:block"
         >
           <Image
+            src="/bg.png"
+            alt="About"
+            width={800}
+            height={800}
+            className="w-[600px] h-[600px] hidden lg:block object-cover object-center rounded-[28px] absolute top-0 left-0 shadow-xl transition-transform duration-500"
+          />
+          <Image
             src="/about.jpg"
             alt="About"
             width={800}
             height={800}
-            className="w-[600px] h-[600px] object-cover object-center rounded-lg relative shadow-xl transition-transform duration-500 group-hover:scale-[1.01]"
+            className="w-[600px] h-[600px] object-cover object-center rounded-[28px] relative shadow-xl transition-transform duration-500 group-hover:scale-[.92]"
           />
         </motion.div>
 
