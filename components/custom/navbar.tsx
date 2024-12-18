@@ -1,15 +1,12 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import useScrollVisibility from "@/hooks/useScrollVisibility";
+import { scrollToSection } from "@/lib/utils";
+
 import { Bolt } from "lucide-react";
 
 const Navbar = () => {
   const isVisible = useScrollVisibility();
-
-  const handleNavClick = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <AnimatePresence>
@@ -30,15 +27,15 @@ const Navbar = () => {
             </div>
             <div className="flex w-full justify-end items-center h-16 gap-8">
               <button
-                onClick={() => handleNavClick("about")}
+                onClick={() => scrollToSection("about")}
                 className="text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none"
-                aria-label="Navigate to Our Work section"
+                aria-label="Navigate to Our Mission section"
                 tabIndex={0}
               >
                 Our mission
               </button>
               <button
-                onClick={() => handleNavClick("our-work")}
+                onClick={() => scrollToSection("our-work")}
                 className="text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none"
                 aria-label="Navigate to Our Work section"
                 tabIndex={0}
@@ -47,7 +44,7 @@ const Navbar = () => {
               </button>
 
               <button
-                onClick={() => handleNavClick("testimonials")}
+                onClick={() => scrollToSection("testimonials")}
                 className="text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none"
                 aria-label="Navigate to Our Clients section"
                 tabIndex={0}
@@ -56,7 +53,7 @@ const Navbar = () => {
               </button>
 
               <button
-                onClick={() => handleNavClick("contact")}
+                onClick={() => scrollToSection("contact")}
                 className="text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none"
                 aria-label="Navigate to Market section"
                 tabIndex={0}

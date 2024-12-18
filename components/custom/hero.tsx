@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import TestimonialsHero from "@/components/custom/testimonials-hero";
+import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -80,6 +81,7 @@ const Hero = () => {
         >
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
             <Button
+              onClick={() => scrollToSection("our-work")}
               variant="default"
               className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 to-yellow-500 hover:bg-yellow-500 text-slate-900 
                 font-semibold px-4 sm:px-6 py-5 sm:py-6 text-sm sm:text-base
