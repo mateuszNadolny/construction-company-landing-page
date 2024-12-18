@@ -77,7 +77,7 @@ export const testimonials = [
 export const projects = [
   {
     id: 1,
-    image: "/portfolio-1.jpg",
+    image: "/portfolio-1.png",
     location: "Los Angeles, CA",
     company: "Elite Estate Advisors",
     title: "The Horizon Retreat",
@@ -93,7 +93,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: "/portfolio-2.jpg",
+    image: "/portfolio-2.png",
     location: "San Francisco, CA",
     company: "Grand kalijaga",
     title: "The Alpine Haven",
@@ -109,7 +109,7 @@ export const projects = [
   },
   {
     id: 3,
-    image: "/portfolio-3.jpg",
+    image: "/portfolio-3.png",
     location: "Seaside Boulevard, Oceanfront Living Space ",
     company: "Skyline Realty Group",
     title: "The Coastal Escape",
@@ -125,7 +125,7 @@ export const projects = [
   },
   {
     id: 4,
-    image: "/portfolio-4.jpg",
+    image: "/portfolio-4.png",
     location: "New York, NY",
     company: "Skyline Realty Group",
     title: "The Urban Loft",
@@ -141,7 +141,7 @@ export const projects = [
   },
   {
     id: 5,
-    image: "/portfolio-5.jpg",
+    image: "/portfolio-5.png",
     location: "Miami, FL",
     company: "Vista Luxe Realty",
     title: "The Family Haven",
