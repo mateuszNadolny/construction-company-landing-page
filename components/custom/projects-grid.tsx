@@ -5,32 +5,13 @@ import ProjectCard from "@/components/custom/project-card";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/data";
 import { Flower } from "lucide-react";
+import { containerVariants, itemVariants } from "@/lib/framer-variants";
 
 const ProjectsGrid = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        staggerChildren: 0.125,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 200 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 },
-    },
-  };
 
   return (
     <motion.div
