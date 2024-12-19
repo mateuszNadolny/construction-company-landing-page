@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
+import { itemVariants } from "@/lib/framer-variants";
 import { motion } from "framer-motion";
 import { FaAward } from "react-icons/fa";
-import { itemVariants } from "@/lib/framer-variants";
+import { blurhashToBase64 } from "blurhash-base64";
+
 const HighlightedText = ({ children }: { children: React.ReactNode }) => (
   <span className="inline-flex px-1 text-slate-900 bg-gradient-to-r from-yellow-400 to-yellow-500">
     {children}
@@ -37,11 +39,13 @@ const TestimonialsHeader = () => {
         </h2>
         <div className="flex justify-center items-center space-x-3">
           <Image
-            src="/avatar-1.png"
+            src="https://randomuser.me/api/portraits/men/32.jpg"
             alt="Leroy Jenkins"
             width={80}
             height={80}
             className="w-10 h-10 md:w-14 md:h-14 bg-center bg-cover rounded-full shadow-xl"
+            placeholder="blur"
+            blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}
           />
           <div>
             <p className="leading-tight text-slate-900">Leroy Jenkins</p>

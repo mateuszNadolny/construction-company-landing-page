@@ -1,10 +1,11 @@
 "use client";
 
+import Image from "next/image";
+import { Marquee } from "@/components/custom/eldoraui/marquee";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import Image from "next/image";
-import { Marquee } from "@/components/custom/eldoraui/marquee";
+import { blurhashToBase64 } from "blurhash-base64";
 
 export function Highlight({
   children,
@@ -73,7 +74,7 @@ export function TestimonialCard({
           alt={name}
           className="size-10 rounded-full ring-1 ring-border ring-offset-4"
           placeholder="blur"
-          blurDataURL={img || ""}
+          blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}
         />
 
         <div>

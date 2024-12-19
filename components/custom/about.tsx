@@ -3,8 +3,8 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/framer-variants";
+import { motion, useInView } from "framer-motion";
 import {
   ArrowRight,
   ChevronsUp,
@@ -12,7 +12,7 @@ import {
   HousePlus,
   ShieldCheck,
 } from "lucide-react";
-import { containerVariants, itemVariants } from "@/lib/framer-variants";
+import { blurhashToBase64 } from "blurhash-base64";
 
 const About = () => {
   const ref = useRef(null);
@@ -50,6 +50,8 @@ const About = () => {
           fill
           className="object-cover object-center opacity-30"
           priority
+          placeholder="blur"
+          blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}
         />
       </div>
 
@@ -71,6 +73,8 @@ const About = () => {
             alt="Background image"
             width={800}
             height={800}
+            placeholder="blur"
+            blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}
             className="w-[600px] h-[600px] hidden lg:block object-cover object-center rounded-[28px] absolute top-0 left-0 shadow-xl transition-transform duration-500"
           />
           <Image
@@ -78,6 +82,8 @@ const About = () => {
             alt="About"
             width={800}
             height={800}
+            placeholder="blur"
+            blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}
             className="w-[600px] h-[600px] object-cover object-center rounded-[28px] relative shadow-xl transition-transform duration-500 group-hover:scale-[.92]"
           />
         </motion.div>

@@ -13,7 +13,7 @@ import {
 
 import { Project } from "@/lib/types";
 import { BadgeCheck } from "lucide-react";
-
+import { blurhashToBase64 } from "blurhash-base64";
 const ProjectModal = ({ project }: { project: Project }) => {
   return (
     <Dialog>
@@ -24,6 +24,8 @@ const ProjectModal = ({ project }: { project: Project }) => {
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
+          placeholder="blur"
+          blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}
           className="object-cover rounded-lg"
           onError={(e) => console.error("Image loading error:", e)}
         />

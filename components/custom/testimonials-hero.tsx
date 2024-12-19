@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { blurhashToBase64 } from "blurhash-base64";
 import { motion } from "framer-motion";
 
 interface TestimonialAvatarProps {
@@ -23,6 +24,8 @@ const TestimonialAvatar: React.FC<TestimonialAvatarProps> = ({
       width={50}
       height={50}
       className="w-12 h-12 object-cover"
+      placeholder="blur"
+      blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}
     />
   </motion.div>
 );
@@ -42,19 +45,19 @@ const TestimonialsHero = () => {
       {/* Avatars Stack */}
       <div className="flex -space-x-3">
         <TestimonialAvatar
-          src="/avatar-1.png"
+          src="https://randomuser.me/api/portraits/men/91.jpg"
           alt="Customer testimonial avatar 1"
         />
         <TestimonialAvatar
-          src="/avatar-2.png"
+          src="https://randomuser.me/api/portraits/women/23.jpg"
           alt="Customer testimonial avatar 2"
         />
         <TestimonialAvatar
-          src="/avatar-3.png"
+          src="https://randomuser.me/api/portraits/men/69.jpg"
           alt="Customer testimonial avatar 3"
         />
         <TestimonialAvatar
-          src="/avatar-4.png"
+          src="https://randomuser.me/api/portraits/women/44.jpg"
           alt="Customer testimonial avatar 4"
         />
       </div>
