@@ -3,6 +3,8 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/custom/navbar";
 
+import { ToastProvider } from "@/components/ui/toast";
+import { Toaster } from "@/components/ui/toaster";
 const dmSans = DM_Sans({
   // variable: "--font-dm-sans",
   subsets: ["latin"],
@@ -21,11 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${dmSans.className} antialiased bg-slate-50/70 backdrop-blur-sm`}
-      >
-        {children}
-        <Navbar />
+      <body className={`${dmSans.className} antialiased bg-slate-50/70`}>
+        <ToastProvider>
+          <Toaster />
+          {children}
+          <Navbar />
+        </ToastProvider>
       </body>
     </html>
   );
