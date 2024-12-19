@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
-import { itemVariants } from "@/lib/framer-variants";
-import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/framer-variants";
+import { motion, useInView } from "framer-motion";
 import { FaAward } from "react-icons/fa";
 import { blurhashToBase64 } from "blurhash-base64";
+import { useRef } from "react";
 
 const HighlightedText = ({ children }: { children: React.ReactNode }) => (
   <span className="inline-flex px-1 text-slate-900 bg-gradient-to-r from-yellow-400 to-yellow-500">
@@ -12,8 +13,17 @@ const HighlightedText = ({ children }: { children: React.ReactNode }) => (
 );
 
 const TestimonialsHeader = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -200px 0px" });
+
   return (
-    <div className="z-20">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={containerVariants}
+      className="z-20"
+    >
       <div className="container flex flex-col items-center mx-auto space-y-6">
         <motion.div
           variants={itemVariants}
@@ -24,7 +34,10 @@ const TestimonialsHeader = () => {
           <div className="h-[2px] w-24 md:w-32 bg-gradient-to-r from-yellow-400 to-transparent" />
         </motion.div>
 
-        <h2 className="flex flex-wrap tracking-tighter justify-center gap-1.5 text-xl md:text-3xl font-bold text-center text-slate-900 w-full lg:max-w-2xl xl:max-w-4xl">
+        <motion.h2
+          variants={itemVariants}
+          className="flex flex-wrap tracking-tighter justify-center gap-1.5 text-xl md:text-3xl font-bold text-center text-slate-900 w-full lg:max-w-2xl xl:max-w-4xl"
+        >
           <span>{`"From`}</span>
           <HighlightedText>legal permits</HighlightedText>
           <span>via</span>
@@ -36,8 +49,12 @@ const TestimonialsHeader = () => {
           <span>for building your</span>
           <HighlightedText>dream home</HighlightedText>
           <span>{`"`}</span>
-        </h2>
-        <div className="flex justify-center items-center space-x-3">
+        </motion.h2>
+
+        <motion.div
+          variants={itemVariants}
+          className="flex justify-center items-center space-x-3"
+        >
           <Image
             src="https://randomuser.me/api/portraits/men/32.jpg"
             alt="Leroy Jenkins"
@@ -53,9 +70,9 @@ const TestimonialsHeader = () => {
               {`One of Nordhaven's first customers`}
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

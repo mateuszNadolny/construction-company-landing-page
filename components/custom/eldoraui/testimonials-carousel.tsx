@@ -211,9 +211,14 @@ const testimonials = [
 export function TestimonialsCarousel() {
   return (
     <section id="testimonials" className="container py-10 z-20">
-      <h3 className="mx-auto max-w-lg text-balance text-center text-lg font-medium tracking-tight text-foreground/80">
+      <motion.h3
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        className="mx-auto max-w-lg text-balance text-center text-lg font-medium tracking-tight text-foreground/80"
+      >
         Check what other customers say about Nordhaven
-      </h3>
+      </motion.h3>
       <div className="relative max-h-screen overflow-hidden">
         <div className="gap-4 md:columns-2 xl:columns-3 2xl:columns-4">
           {Array(Math.ceil(testimonials.length / 3))
@@ -245,7 +250,7 @@ export function TestimonialsCarousel() {
               </Marquee>
             ))}
         </div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-background from-20%"></div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-slate-50 from-20%"></div>
         <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-slate-50 from-20%"></div>
       </div>
     </section>
