@@ -43,7 +43,7 @@ const Faq = () => {
     <section
       id="faq"
       aria-label="Frequently Asked Questions"
-      className="py-20 lg:py-0 relative flex flex-col flex-1 w-full items-center justify-center h-screen"
+      className="py-20 lg:py-10 relative flex flex-col flex-1 w-full items-center justify-center"
     >
       <motion.div
         initial="hidden"
