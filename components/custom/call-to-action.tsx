@@ -38,28 +38,24 @@ const CallToAction = () => {
   ];
 
   return (
-    <section
+    <motion.section
       id="call-to-action"
       ref={ref}
       aria-label="Call to Action Section"
-      className="relative flex flex-col min-h-[80vh] items-center justify-center py-4 lg:py-20  bg-gradient-to-b from-yellow-50/30 via-slate-50/20 to-white/90 backdrop-blur-[2px]"
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={containerVariants}
+      className="relative flex flex-col min-h-[80vh] items-center justify-center py-4 md:py-10  bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500"
     >
-      <div className="absolute inset-0 bg-slate-50/70 backdrop-blur-sm z-10" />
-
-      <motion.div
-        className="container mx-auto px-4 relative z-20"
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={containerVariants}
-      >
+      <motion.div className="container mx-auto relative z-20">
         <div className="flex flex-col items-center max-w-4xl mx-auto text-center space-y-4 md:space-y-8">
           <motion.div
             variants={itemVariants}
             className="flex w-full items-center justify-center gap-2"
           >
-            <div className="h-[2px] w-24 md:w-32 bg-gradient-to-r from-transparent to-yellow-400" />
-            <Flower2 className="w-12 h-12 p-2 rounded-full bg-yellow-400 text-white" />
-            <div className="h-[2px] w-24 md:w-32 bg-gradient-to-r from-yellow-400 to-transparent" />
+            <div className="h-[2px] w-24 md:w-32 bg-gradient-to-r from-transparent to-slate-600" />
+            <Flower2 className="w-12 h-12 p-2 rounded-full bg-yellow-400 text-slate-900" />
+            <div className="h-[2px] w-24 md:w-32 bg-gradient-to-r from-slate-600 to-transparent" />
           </motion.div>
 
           <motion.h2
@@ -71,7 +67,7 @@ const CallToAction = () => {
 
           <motion.p
             variants={itemVariants}
-            className="text-sm sm:text-base md:text-lg font-normal z-20 tracking-tight text-balance leading-relaxed text-muted-foreground"
+            className="text-sm sm:text-base md:text-lg font-normal z-20 tracking-tight text-balance leading-relaxed text-slate-800"
           >
             {`Experience the future of home building with our innovative modular
             solutions. From design to completion, we're committed to creating
@@ -87,12 +83,12 @@ const CallToAction = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ scale: 1.05 }}
-                className={`p-2 md:p-6 rounded-xl bg-gradient-to-r ${stat.gradient} text-white shadow-lg`}
+                className={`p-2 md:p-6 rounded-xl border border-[#FFFFFF] ${stat.gradient} text-white shadow-lg shadow-[rgba(255,255,255,0.2)] hover:shadow-[rgba(255,255,255,0.5)] transition-all duration-300`}
               >
-                <p className="text-xl md:text-3xl font-bold md:mb-1">
+                <p className="text-xl text-slate-900 md:text-3xl font-bold md:mb-1">
                   {stat.value}
                 </p>
-                <p className="text-xs md:text-base font-medium opacity-90">
+                <p className="text-xs text-slate-900 md:text-base font-medium opacity-90">
                   {stat.title}
                 </p>
               </motion.div>
@@ -107,18 +103,16 @@ const CallToAction = () => {
               onClick={handleContactClick}
               size="lg"
               variant="default"
-              className="w-auto md:w-[200px] bg-gradient-to-r from-yellow-400 to-yellow-500 hover:bg-yellow-500 text-slate-900 
-                font-semibold p-6 text-sm sm:text-base
-                transition-all duration-100 hover:scale-95"
+              className="w-auto md:w-[200px] bg-[#F8FAFC] text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95"
             >
               Start Your Journey
               <ArrowRight className="w-5 h-5" />
             </Button>
 
             <Button
-              variant="outline"
+              variant="default"
               size="lg"
-              className="w-auto md:w-[200px] border-yellow-500 text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2  transition-all duration-100 hover:scale-95"
+              className="w-auto md:w-[200px] bg-[#F8FAFC] text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95"
             >
               <Phone className="w-5 h-5" />
               Schedule a Call
@@ -129,7 +123,7 @@ const CallToAction = () => {
           Transparent pricing. No obligations. Clear, actionable outcomes.
         </p>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 
