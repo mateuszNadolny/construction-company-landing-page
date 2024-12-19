@@ -142,6 +142,7 @@ const Timer3 = () => {
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+      aria-label="Limited Time Offer"
       className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 py-10 z-10 md:my-10 shadow-inner"
     >
       <div className="flex flex-col items-center justify-center w-full h-full">

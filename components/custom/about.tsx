@@ -40,6 +40,7 @@ const About = () => {
   return (
     <section
       id="about"
+      aria-label="About Us"
       ref={ref}
       className="relative flex flex-col flex-1 min-h-screen items-center justify-center py-12 lg:py-0 overflow-hidden"
     >
