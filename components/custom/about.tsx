@@ -48,7 +48,7 @@ const About = () => {
           src="/about.jpg"
           alt="About background"
           fill
-          className="object-cover object-center opacity-30"
+          className="object-cover object-center opacity-10"
           priority
           placeholder="blur"
           blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}

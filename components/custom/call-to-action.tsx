@@ -103,7 +103,7 @@ const CallToAction = () => {
               onClick={handleContactClick}
               size="lg"
               variant="default"
-              className="w-auto md:w-[200px] bg-slate-50 text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95"
+              className="w-auto md:w-[200px] bg-slate-50 text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95 shadow-md"
             >
               Start Your Journey
               <ArrowRight className="w-5 h-5" />
@@ -112,7 +112,7 @@ const CallToAction = () => {
             <Button
               variant="default"
               size="lg"
-              className="w-auto md:w-[200px] bg-slate-50 text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95"
+              className="w-auto md:w-[200px] bg-slate-50 text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95 shadow-md"
             >
               <Phone className="w-5 h-5" />
               Schedule a Call

@@ -16,7 +16,7 @@ const Navbar = () => {
           animate={{ y: 0 }}
           exit={{ y: -100 }}
           transition={{ duration: 0.3 }}
-          className="hidden sm:block fixed w-full top-0 left-0 bg-blend-color-dodge z-50 bg-white/90 backdrop-blur-md"
+          className="fixed w-full top-0 left-0 bg-blend-color-dodge z-50 bg-white/90 backdrop-blur-md"
         >
           <div className="max-w-full flex justify-between items-center px-4 sm:px-6 lg:px-12">
             <div className="flex items-center gap-2 p-2">
