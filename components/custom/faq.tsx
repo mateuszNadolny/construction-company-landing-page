@@ -4,7 +4,6 @@ import { useState } from "react";
 import { containerVariants, itemVariants } from "@/lib/framer-variants";
 
 const Faq = () => {
-  // Track which FAQ item is open
   const [openItem, setOpenItem] = useState<number | null>(null);
 
   const faqItems = [
