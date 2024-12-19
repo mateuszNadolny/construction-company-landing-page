@@ -41,7 +41,7 @@ const About = () => {
     <section
       id="about"
       ref={ref}
-      className="relative flex flex-col flex-1 min-h-screen items-center justify-center py-20 lg:py-0 bg-gradient-to-b from-yellow-50/30 via-slate-50/20 to-white/90 backdrop-blur-[2px] overflow-hidden"
+      className="relative flex flex-col flex-1 min-h-screen items-center justify-center py-12 lg:py-0 overflow-hidden"
     >
       <div className="absolute inset-0 lg:hidden">
         <Image
@@ -52,8 +52,6 @@ const About = () => {
           priority
         />
       </div>
-
-      <div className="absolute inset-0 bg-slate-50/70 backdrop-blur-sm z-10" />
 
       <motion.div
         initial="hidden"
@@ -101,7 +99,7 @@ const About = () => {
 
           <motion.p
             variants={itemVariants}
-            className="text-muted-foreground text-lg"
+            className="text-sm sm:text-base md:text-lg font-normal z-20 tracking-tight text-balance leading-relaxed text-muted-foreground"
           >
             Were revolutionizing the construction industry with sustainable,
             efficient, and beautiful modular homes. Our commitment to quality

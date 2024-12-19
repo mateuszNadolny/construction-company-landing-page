@@ -10,7 +10,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Constructex | Home",
+  title: "Nordhaven | Modern Modular Homes",
   description: "We build your dream home",
 };
 
@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} antialiased`}>
+      <body
+        className={`${dmSans.className} antialiased bg-slate-50/70 backdrop-blur-sm`}
+      >
         {children}
         <Navbar />
       </body>

@@ -52,7 +52,7 @@ const CallToAction = () => {
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
       >
-        <div className="flex flex-col items-center max-w-4xl mx-auto text-center space-y-8">
+        <div className="flex flex-col items-center max-w-4xl mx-auto text-center space-y-4 md:space-y-8">
           <motion.div
             variants={itemVariants}
             className="flex w-full items-center justify-center gap-2"
@@ -64,14 +64,14 @@ const CallToAction = () => {
 
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl pb-2 font-bold tracking-tight bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
+            className="text-2xl md:text-5xl md:pb-2 font-bold tracking-tight bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
           >
             {`Let's Build Your Dream Home Together`}
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="text-lg md:text-xl text-gray-600 max-w-2xl"
+            className="text-sm sm:text-base md:text-lg font-normal z-20 tracking-tight text-balance leading-relaxed text-muted-foreground"
           >
             {`Experience the future of home building with our innovative modular
             solutions. From design to completion, we're committed to creating
@@ -87,10 +87,14 @@ const CallToAction = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ scale: 1.05 }}
-                className={`p-6 rounded-xl bg-gradient-to-r ${stat.gradient} text-white shadow-lg`}
+                className={`p-2 md:p-6 rounded-xl bg-gradient-to-r ${stat.gradient} text-white shadow-lg`}
               >
-                <p className="text-3xl font-bold mb-1">{stat.value}</p>
-                <p className="text-sm font-medium opacity-90">{stat.title}</p>
+                <p className="text-xl md:text-3xl font-bold md:mb-1">
+                  {stat.value}
+                </p>
+                <p className="text-xs md:text-base font-medium opacity-90">
+                  {stat.title}
+                </p>
               </motion.div>
             ))}
           </motion.div>
