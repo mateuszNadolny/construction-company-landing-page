@@ -83,7 +83,7 @@ const CallToAction = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ scale: 1.05 }}
-                className={`p-2 md:p-6 rounded-xl border border-[#FFFFFF] ${stat.gradient} text-white shadow-lg shadow-[rgba(255,255,255,0.2)] hover:shadow-[rgba(255,255,255,0.5)] transition-all duration-300`}
+                className={`p-2 cursor-default bg-slate-50 backdrop-blur-sm md:p-6 rounded-xl border border-[#FFFFFF] ${stat.gradient} text-white shadow-lg shadow-[rgba(255,255,255,0.2)] hover:shadow-[rgba(255,255,255,0.5)] transition-all duration-300`}
               >
                 <p className="text-xl text-slate-900 md:text-3xl font-bold md:mb-1">
                   {stat.value}
@@ -103,7 +103,7 @@ const CallToAction = () => {
               onClick={handleContactClick}
               size="lg"
               variant="default"
-              className="w-auto md:w-[200px] bg-[#F8FAFC] text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95"
+              className="w-auto md:w-[200px] bg-slate-50 text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95"
             >
               Start Your Journey
               <ArrowRight className="w-5 h-5" />
@@ -112,7 +112,7 @@ const CallToAction = () => {
             <Button
               variant="default"
               size="lg"
-              className="w-auto md:w-[200px] bg-[#F8FAFC] text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95"
+              className="w-auto md:w-[200px] bg-slate-50 text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95"
             >
               <Phone className="w-5 h-5" />
               Schedule a Call
