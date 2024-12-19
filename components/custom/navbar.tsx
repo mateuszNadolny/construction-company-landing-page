@@ -51,6 +51,14 @@ const Navbar = () => {
               >
                 Reviews
               </button>
+              <button
+                onClick={() => scrollToSection("faq")}
+                className="text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none"
+                aria-label="Navigate to Our Clients section"
+                tabIndex={0}
+              >
+                FAQ
+              </button>
 
               <button
                 onClick={() => scrollToSection("contact")}
