@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import useScrollVisibility from "@/hooks/useScrollVisibility";
 import { scrollToSection } from "@/lib/utils";
 
-import { Bolt } from "lucide-react";
+import { Eclipse } from "lucide-react";
 
 const Navbar = () => {
   const isVisible = useScrollVisibility();
@@ -20,9 +20,9 @@ const Navbar = () => {
         >
           <div className="max-w-full flex justify-between items-center px-4 sm:px-6 lg:px-12">
             <div className="flex items-center gap-2 p-2">
-              <Bolt className="w-6 h-6 text-yellow-400 font-[900]" />
+              <Eclipse className="w-6 h-6 text-yellow-400 font-[900]" />
               <p className="text-xl font-extrabold text-slate-900 tracking-tighter">
-                Constructex
+                Nordhaven
               </p>
             </div>
             <div className="flex w-full justify-end items-center h-16 gap-8">
