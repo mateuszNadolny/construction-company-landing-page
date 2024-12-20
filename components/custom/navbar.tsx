@@ -6,34 +6,7 @@ import useScrollVisibility from "@/hooks/useScrollVisibility";
 import { scrollToSection } from "@/lib/utils";
 
 import { Eclipse, MenuIcon } from "lucide-react";
-
-const menuItems = [
-  {
-    label: "Our mission",
-    section: "about",
-    ariaLabel: "Navigate to Our Mission section",
-  },
-  {
-    label: "Our houses",
-    section: "our-work",
-    ariaLabel: "Navigate to Our Work section",
-  },
-  {
-    label: "Reviews",
-    section: "testimonials",
-    ariaLabel: "Navigate to Our Clients section",
-  },
-  {
-    label: "FAQ",
-    section: "faq",
-    ariaLabel: "Navigate to Our Clients section",
-  },
-  {
-    label: "Contact",
-    section: "contact",
-    ariaLabel: "Navigate to Market section",
-  },
-];
+import { menuItems } from "@/lib/data";
 
 const menuVariants = {
   closed: {

@@ -7,5 +7,12 @@ export function cn(...inputs: ClassValue[]) {
 
 export function scrollToSection(sectionId: string) {
   const element = document.getElementById(sectionId);
-  element?.scrollIntoView({ behavior: "smooth" });
+  if (element) {
+    const elementPosition =
+      element.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: elementPosition - 50,
+      behavior: "smooth",
+    });
+  }
 }
