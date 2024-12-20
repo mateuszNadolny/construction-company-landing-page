@@ -1,18 +1,15 @@
 "use client";
 
 import { useRef } from "react";
-import { useInView, motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 import { containerVariants, itemVariants } from "@/lib/framer-variants";
+import { scrollToSection } from "@/lib/utils";
+import { useInView, motion } from "framer-motion";
 import { Flower2, ArrowRight, Phone } from "lucide-react";
-import { Button } from "../ui/button";
 
 const CallToAction = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  const handleContactClick = () => {
-    window.location.href = "#contact";
-  };
 
   const stats = [
     {
@@ -100,7 +97,7 @@ const CallToAction = () => {
             className="flex flex-col sm:flex-row gap-4 mt-8"
           >
             <Button
-              onClick={handleContactClick}
+              onClick={() => scrollToSection("contact")}
               size="lg"
               variant="default"
               className="w-auto md:w-[200px] bg-slate-50 text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95 shadow-md"
@@ -110,6 +107,7 @@ const CallToAction = () => {
             </Button>
 
             <Button
+              onClick={() => scrollToSection("contact")}
               variant="default"
               size="lg"
               className="w-auto md:w-[200px] bg-slate-50 text-slate-900 hover:bg-yellow-50 font-semibold p-6 text-sm sm:text-base flex items-center gap-2 transition-all duration-100 hover:scale-95 shadow-md"
