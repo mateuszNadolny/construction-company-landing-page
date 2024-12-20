@@ -210,12 +210,12 @@ const testimonials = [
 
 export function TestimonialsCarousel() {
   return (
-    <section id="testimonials" className="container py-10 z-20">
+    <section id="testimonials" className="container z-20">
       <motion.h3
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="mx-auto max-w-lg text-balance text-center text-lg font-medium tracking-tight text-foreground/80"
+        className="mx-auto max-w-lg my-4 text-balance text-center text-lg font-medium tracking-tight text-foreground/80"
       >
         Check what other customers say about Nordhaven
       </motion.h3>

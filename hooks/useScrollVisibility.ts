@@ -13,7 +13,7 @@ const useScrollVisibility = () => {
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => {
           setIsVisible(false);
-        }, 1000);
+        }, 3000);
       }
     };
 
