@@ -2,7 +2,7 @@
 
 A modern, responsive landing page for Nordhaven Construction Company, built with Next.js 15, TypeScript, and TailwindCSS. The website showcases modular home offerings with a focus on sustainability and modern design.
 
-![Nordhaven Landing Page Preview](https://nordhaven-constructions.vercel.app/)
+[Nordhaven Landing Page Preview](https://nordhaven-constructions.vercel.app/)
 
 ## Features
 
