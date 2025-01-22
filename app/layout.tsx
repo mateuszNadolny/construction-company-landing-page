@@ -5,6 +5,8 @@ import Navbar from "@/components/custom/navbar";
 
 import { ToastProvider } from "@/components/ui/toast";
 import { Toaster } from "@/components/ui/toaster";
+import { ReactLenis } from "@/components/providers/lenis-provider";
+
 const dmSans = DM_Sans({
   // variable: "--font-dm-sans",
   subsets: ["latin"],
@@ -23,13 +25,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} antialiased bg-slate-50/70`}>
-        <ToastProvider>
-          <Toaster />
-          {children}
-          <Navbar />
-        </ToastProvider>
-      </body>
+      <ReactLenis root>
+        <body className={`${dmSans.className} antialiased bg-slate-50/70`}>
+          <ToastProvider>
+            <Toaster />
+            {children}
+            <Navbar />
+          </ToastProvider>
+        </body>
+      </ReactLenis>
     </html>
   );
 }
