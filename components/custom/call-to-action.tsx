@@ -72,14 +72,12 @@ const CallToAction = () => {
           </motion.p>
 
           <motion.div
-            variants={containerVariants}
+            variants={itemVariants}
             className="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full mt-8"
           >
             {stats.map((stat, index) => (
-              <motion.div
+              <div
                 key={index}
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
                 className={`p-2 cursor-default bg-slate-50 backdrop-blur-sm md:p-6 rounded-xl border border-[#FFFFFF] ${stat.gradient} text-white shadow-lg shadow-[rgba(255,255,255,0.2)] hover:shadow-[rgba(255,255,255,0.5)] transition-all duration-300`}
               >
                 <p className="text-xl text-slate-900 md:text-3xl font-bold md:mb-1">
@@ -88,7 +86,7 @@ const CallToAction = () => {
                 <p className="text-xs text-slate-900 md:text-base font-medium opacity-90">
                   {stat.title}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
 
