@@ -45,19 +45,19 @@ const TestimonialsHero = () => {
       {/* Avatars Stack */}
       <div className="flex -space-x-3">
         <TestimonialAvatar
-          src="https://randomuser.me/api/portraits/men/91.jpg"
+          src="/man-1.webp"
           alt="Customer testimonial avatar 1"
         />
         <TestimonialAvatar
-          src="https://randomuser.me/api/portraits/women/23.jpg"
+          src="/woman-1.webp"
           alt="Customer testimonial avatar 2"
         />
         <TestimonialAvatar
-          src="https://randomuser.me/api/portraits/men/69.jpg"
+          src="/man-2.webp"
           alt="Customer testimonial avatar 3"
         />
         <TestimonialAvatar
-          src="https://randomuser.me/api/portraits/women/44.jpg"
+          src="/woman-2.webp"
           alt="Customer testimonial avatar 4"
         />
       </div>

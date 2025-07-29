@@ -89,7 +89,7 @@ const testimonials = [
   {
     name: "Alex Rivera",
     role: "Los Angeles, CA",
-    img: "https://randomuser.me/api/portraits/men/91.jpg",
+    img: "/man-1.webp",
     description: (
       <p>
         The team made the entire process so simple, and the final result was
@@ -101,7 +101,7 @@ const testimonials = [
   {
     name: "Samantha Lee",
     role: "Oslo, Norway",
-    img: "https://randomuser.me/api/portraits/women/12.jpg",
+    img: "/woman-1.webp",
     description: (
       <p>
         <Highlight>Fast, efficient, and beautiful.</Highlight> We&apos;re
@@ -112,7 +112,7 @@ const testimonials = [
   {
     name: "Raj Patel",
     role: "New York, NY",
-    img: "https://randomuser.me/api/portraits/men/45.jpg",
+    img: "/man-2.webp",
     description: (
       <p>
         I couldn&apos;t believe{" "}
@@ -124,7 +124,7 @@ const testimonials = [
   {
     name: "Emily Chen",
     role: "San Francisco, CA",
-    img: "https://randomuser.me/api/portraits/women/83.jpg",
+    img: "/woman-2.webp",
     description: (
       <p>
         The attention to <Highlight>detail and sustainable approach</Highlight>{" "}
@@ -135,7 +135,7 @@ const testimonials = [
   {
     name: "Michael Brown",
     role: "Boston, MA",
-    img: "https://randomuser.me/api/portraits/men/1.jpg",
+    img: "/man-3.webp",
     description: (
       <p>
         <Highlight>From the design phase to delivery</Highlight> the
@@ -147,7 +147,7 @@ const testimonials = [
   {
     name: "Linda Wu",
     role: "Chicago, IL",
-    img: "https://randomuser.me/api/portraits/women/5.jpg",
+    img: "/woman-3.webp",
     description: (
       <p>
         The team&apos;s commitment to <Highlight>sustainability</Highlight> and
@@ -158,7 +158,7 @@ const testimonials = [
   {
     name: "Carlos Gomez",
     role: "Miami, FL",
-    img: "https://randomuser.me/api/portraits/men/14.jpg",
+    img: "/man-4.webp",
     description: (
       <p>
         This was our first time building a modular home,
@@ -172,7 +172,7 @@ const testimonials = [
   {
     name: "Aisha Khan",
     role: "Copenhagen, Denmark",
-    img: "https://randomuser.me/api/portraits/women/56.jpg",
+    img: "/woman-4.webp",
     description: (
       <p>
         <Highlight>
@@ -186,7 +186,7 @@ const testimonials = [
   {
     name: "Tom Chen",
     role: "Warsaw, Poland",
-    img: "https://randomuser.me/api/portraits/men/18.jpg",
+    img: "/man-5.webp",
     description: (
       <p>
         The team&apos;s commitment to <Highlight>sustainability</Highlight> and
@@ -197,7 +197,7 @@ const testimonials = [
   {
     name: "Sofia Patel",
     role: "Stockholm, Sweden",
-    img: "https://randomuser.me/api/portraits/women/73.jpg",
+    img: "/woman-5.webp",
     description: (
       <p>
         This was our first time building a modular home, and the team made
