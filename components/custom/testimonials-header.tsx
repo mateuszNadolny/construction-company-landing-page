@@ -56,7 +56,7 @@ const TestimonialsHeader = () => {
           className="flex justify-center items-center space-x-3"
         >
           <Image
-            src="https://randomuser.me/api/portraits/men/32.jpg"
+            src="/man-1.webp"
             alt="Leroy Jenkins"
             width={80}
             height={80}
